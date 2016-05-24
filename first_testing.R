@@ -21,6 +21,6 @@ x<-x[,c(1,7)]
 
 ### Normal dist. ###
 mylike<-function(mu=0, sigma=1){
-  -sum(stats::dnorm(x[,2],mean=mu, sd=sigma, log=TRUE))
+  -sum(dnorm(x[,2],mean=mu, sd=sigma, log=TRUE))
 }
 
